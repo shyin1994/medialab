@@ -1,1 +1,66 @@
-/* CSS declarations go here */
+body {
+	font-size: 50pt;
+	text-align: center;
+}
+
+#container {
+	position: relative;
+}
+
+#video_container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+#video_container iframe, #video_container object, #video_container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#background {
+	color: teal;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 100%;
+}
+
+#video {
+}
+
+.hidden {
+	display: none;
+}
+
+.centered {
+	display:inline-block;
+	vertical-align: middle;
+}
+
+#section_two{
+	background-color: teal;
+	color: black;
+	font-family: Verdana;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#section_three{
+	color: teal;
+	background-color: black;
+	position: absolute;
+	top: 200%;
+	width: 100%;
+	height: 100%;
+}
