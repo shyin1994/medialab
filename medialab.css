@@ -1,8 +1,11 @@
 body {
 	font-size: 50pt;
 	text-align: center;
-	background-color: red;
 	font-family: 'Open Sans', sans-serif;
+	background-color: darkgray;
+	margin:2px;
+	height:300vh;
+	width: 100vw;
 }
 
 #navbar {
@@ -12,7 +15,6 @@ body {
 	height: 60px;
 	z-index: 2;
 	font-size: 10pt;
-	opacity: .6;
 	top: 0;
 	left: 0;
 }
@@ -24,8 +26,8 @@ body {
 #nav_head {
 	margin-top:20px;
 	float:left;
-	margin-left: 8%;
-	font-size: 11.2pt;
+	margin-left: 5%;
+	font-size: 11pt;
 }
 
 .bold {
@@ -57,26 +59,26 @@ div>a>img {
 	margin-left: 10px;
 }
 
-#video_container {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-}
-
-
-#background {
+#video {
 	color: teal;
 	background-color: black;
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
-	line-height: 100%;
+	width: 100vw;
+	height: 100vh;
 }
 
-#video {
+#background {
+	z-index: 1;
+	display: inline-block;
+}
+
+.background {
+	display: inline-block;
+	width: 50vw;
+	height: 50vh;
+	float: left;
 }
 
 .hidden {
@@ -89,19 +91,10 @@ div>a>img {
 }
 
 #section_two{
-	background-color: teal;
 	color: black;
 	position: absolute;
 	top: 100%;
-	width: 100%;
-	height: 100%;
-}
-
-#section_three{
-	color: teal;
-	background-color: black;
-	position: absolute;
-	top: 200%;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 200vh;
+	margin-top: 15.4px;
 }
