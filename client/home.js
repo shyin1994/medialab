@@ -13,7 +13,19 @@ $(document).ready(function(){
   //  $(this).text("");
   //});
 
-  $(window).scroll(function(){
-  })
+  setInterval(function(){
+    if ($(window).scrollTop()>=window.innerHeight-60){
+      $("#navbar").slideDown('fast');
+    }
+    //if ($(window).scrollTop()>=window.innerHeight){
+    //  $('#background').css('position','fixed');
+    //}
+  },50);
+
+  setInterval(function(){
+    if ($(window).scrollTop()<window.innerHeight-60){
+      $("#navbar").slideUp('fast');
+    }
+  },50);
 
 });
