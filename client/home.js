@@ -1,8 +1,8 @@
 $(document).ready(function(){
-  $('#container').click(function(){
-   $('#background').toggleClass('hidden');
-   $('#video').toggleClass('hidden');
-  });
+  //$('#video_area').click(function(){
+  // $('#video_area').addClass('fade');
+  // $('#video').toggleClass('hidden');
+  //});
 
   //$('#background').mouseenter(function(){
   //	$(this).animate({'opacity':.7},200);
@@ -13,13 +13,16 @@ $(document).ready(function(){
   //  $(this).text("");
   //});
 
+  $('.playButton').click(function(){
+    $(this).addClass('hidden');
+    $('#video').removeClass('hidden');
+    $('#video_area').addClass('fade',500);
+  });
+
   setInterval(function(){
     if ($(window).scrollTop()>=window.innerHeight-60){
       $("#navbar").slideDown('fast');
     }
-    //if ($(window).scrollTop()>=window.innerHeight){
-    //  $('#background').css('position','fixed');
-    //}
   },50);
 
   setInterval(function(){

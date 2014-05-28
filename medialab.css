@@ -2,8 +2,6 @@ body {
 	font-size: 50pt;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	background-color: darkgray;
-	margin:2px;
 	height:300vh;
 	width: 100vw;
 }
@@ -66,14 +64,28 @@ div>a>img {
 	margin-left: 10px;
 }
 
-#video {
-	color: teal;
-	background-color: teal;
+#video_area {
+	color: white;
+	background-image: url(/startImg_2.gif);
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
+	font-size: 11pt;
+	font-weight: 200;
+}
+
+#video_area>div {
+	font-size: 34pt;
+	font-weight: 200;
+}
+
+.playButton{
+  position:absolute;
+  top:45%;
+  left:50%;
+   
 }
 
 #background {
@@ -92,6 +104,19 @@ div>a>img {
 	display: none;
 }
 
+.fade {
+	z-index: -1;
+	background-color:black; 
+	opacity:.3;
+}
+
+#video {
+	z-index: 1;
+	width: 50vw;
+	height: 50vh;
+	margin-top: 25vh;
+}
+
 .centered {
 	display:inline-block;
 	vertical-align: middle;
@@ -104,4 +129,9 @@ div>a>img {
 	width: 100vw;
 	height: 200vh;
 	margin-top: 16.5px;
+	background: url(/001.png), url(/002.png), url(/003.png), url(/004.png);
+	background-position: left top, right top, left middle, right middle;
+	background-repeat: no-repeat;
+	background-size: 50vw 50vh;
+	background-attachment: fixed;
 }
